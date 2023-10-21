@@ -1,0 +1,17 @@
+{
+	"name": "@snorreks/aniwave-qol-extension",
+	"type": "module",
+	"scripts": {
+		"lint": "eslint --ext .js,.html src",
+		"write": "prettier --write src/**/*.{js,html}",
+		"fix": "pnpm lint --fix && pnpm write"
+	},
+	"devDependencies": {
+		"eslint": "^8.52.0",
+		"eslint-config-google": "^0.14.0",
+		"eslint-config-prettier": "^9.0.0",
+		"eslint-plugin-html": "^7.1.0",
+		"eslint-plugin-prettier": "^5.0.1",
+		"prettier": "^3.0.3"
+	}
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	<head>
+		<title>AniWave QoL Settings</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				width: 150px;
+				padding: 5px;
+				background-color: #f0f0f0;
+			}
+
+			h3 {
+				color: #333;
+			}
+
+			label {
+				display: block;
+				margin: 10px 0;
+				font-size: 16px;
+			}
+
+			input[type='checkbox'] {
+				margin-right: 10px;
+				transform: scale(1.5);
+			}
+
+			/* Custom checkbox styles */
+			input[type='checkbox'] + label::before {
+				content: '\2714';
+				font-size: 20px;
+				color: transparent;
+				transition: all 0.3s;
+			}
+
+			input[type='checkbox']:checked + label::before {
+				color: #007bff;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h3>AniWave QoL Settings</h3>
+		<label>
+			<input type="checkbox" id="skipIntroCheckbox" /> Skip Intro
+		</label>
+		<label>
+			<input type="checkbox" id="skipEndingCheckbox" /> Skip Ending
+		</label>
+	</body>
+	<script type="module" src="index.js"></script>
+</html>
