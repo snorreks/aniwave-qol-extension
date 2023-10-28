@@ -30,5 +30,12 @@
 		".vscode-insiders",
 		"pnpm-lock.yaml"
 	],
-	"cSpell.words": ["aniwave", "snorreks"]
+	"cSpell.words": [
+		"aniwave",
+		"enigo",
+		"instream",
+		"outstream",
+		"snorreks",
+		"vidplay"
+	]
 }

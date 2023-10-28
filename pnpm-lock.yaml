@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
+  '@types/chrome':
+    specifier: ^0.0.248
+    version: 0.0.248
   eslint:
     specifier: ^8.52.0
     version: 8.52.0
@@ -41,8 +44,8 @@ packages:
       eslint-visitor-keys: 3.4.3
     dev: true
 
-  /@eslint-community/regexpp@4.9.1:
-    resolution: {integrity: sha512-Y27x+MBLjXa+0JWDhykM3+JE+il3kHKAEqabfEWq3SDhZjLYb6/BHL/JKFnH3fe207JaXkyDo685Oc2Glt6ifA==}
+  /@eslint-community/regexpp@4.10.0:
+    resolution: {integrity: sha512-Cu96Sd2By9mCNTx2iyKOmq10v22jUVQv0lQnlGNy16oE9589yE+QADPbrMGCkA51cKZSg3Pu/aTJVTGfL/qjUA==}
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
     dev: true
 
@@ -121,20 +124,41 @@ packages:
       tslib: 2.6.2
     dev: true
 
+  /@types/chrome@0.0.248:
+    resolution: {integrity: sha512-qtBzxZD1v3eWZn8XxH1i07pAhzJDHnxJBBVy7bmntXxXKxjzNXYxD41teqa5yOcX/Yy8brRFGZESEzGoINvBDg==}
+    dependencies:
+      '@types/filesystem': 0.0.34
+      '@types/har-format': 1.2.14
+    dev: true
+
+  /@types/filesystem@0.0.34:
+    resolution: {integrity: sha512-La4bGrgck8/rosDUA1DJJP8hrFcKq0BV6JaaVlNnOo1rJdJDcft3//slEbAmsWNUJwXRCc0DXpeO40yuATlexw==}
+    dependencies:
+      '@types/filewriter': 0.0.31
+    dev: true
+
+  /@types/filewriter@0.0.31:
+    resolution: {integrity: sha512-12df1utOvPC80+UaVoOO1d81X8pa5MefHNS+gWX9R2ucSESpMz9K5QwlTWDGKASrzCpSFwj7NPYh+nTsolgEGA==}
+    dev: true
+
+  /@types/har-format@1.2.14:
+    resolution: {integrity: sha512-pEmBAoccWvO6XbSI8A7KvIDGEoKtlLWtdqVCKoVBcCDSFvR4Ijd7zGLu7MWGEqk2r8D54uWlMRt+VZuSrfFMzQ==}
+    dev: true
+
   /@ungap/structured-clone@1.2.0:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
-  /acorn-jsx@5.3.2(acorn@8.10.0):
+  /acorn-jsx@5.3.2(acorn@8.11.2):
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
-      acorn: 8.10.0
+      acorn: 8.11.2
     dev: true
 
-  /acorn@8.10.0:
-    resolution: {integrity: sha512-F0SAmZ8iUtS//m8DmCTA0jlh6TDKkHQyK6xc6V4KDTyZKA9dnvX9/3sRTVQrWm79glUAZbnmmNcdYwUIHWVybw==}
+  /acorn@8.11.2:
+    resolution: {integrity: sha512-nc0Axzp/0FILLEVsm4fNwLCwMttvhEI263QtVPQcbpfZZ3ts0hLsZGOpE6czNlid7CJ9MlyH8reXkpsf3YUY4w==}
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
@@ -385,7 +409,7 @@ packages:
     hasBin: true
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.52.0)
-      '@eslint-community/regexpp': 4.9.1
+      '@eslint-community/regexpp': 4.10.0
       '@eslint/eslintrc': 2.1.2
       '@eslint/js': 8.52.0
       '@humanwhocodes/config-array': 0.11.13
@@ -430,8 +454,8 @@ packages:
     resolution: {integrity: sha512-oruZaFkjorTpF32kDSI5/75ViwGeZginGGy2NoOSg3Q9bnwlnmDm4HLnkl0RE3n+njDXR037aY1+x58Z/zFdwQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
-      acorn: 8.10.0
-      acorn-jsx: 5.3.2(acorn@8.10.0)
+      acorn: 8.11.2
+      acorn-jsx: 5.3.2(acorn@8.11.2)
       eslint-visitor-keys: 3.4.3
     dev: true
 

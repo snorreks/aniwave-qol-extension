@@ -10,13 +10,19 @@
 				background-color: #f0f0f0;
 			}
 
-			h3 {
+			h2 {
 				color: #333;
 			}
 
 			label {
 				display: block;
 				margin: 10px 0;
+				font-size: 16px;
+			}
+
+			select {
+				width: 100%;
+				padding: 5px;
 				font-size: 16px;
 			}
 
@@ -44,9 +50,23 @@
 		<label>
 			<input type="checkbox" id="skipIntroCheckbox" /> Skip Intro
 		</label>
+
+		<br />
+
 		<label>
 			<input type="checkbox" id="skipEndingCheckbox" /> Skip Ending
 		</label>
+
+		<br />
+
+		<label for="qualitySelect">Video Quality:</label>
+		<select id="qualitySelect">
+			<option value="auto">Auto</option>
+			<option value="1080p">1080p</option>
+			<option value="720p">720p</option>
+			<option value="480p">480p</option>
+			<option value="360p">360p</option>
+		</select>
 	</body>
 	<script type="module" src="index.js"></script>
 </html>

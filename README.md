@@ -2,8 +2,11 @@
 
 ## Features
 
--   Auto skip intro
--   Auto skip ending
+-   Auto skip intro and ending on AniWave videos.
+
+## Installation
+
+You can install the AniWave Quality of Life Extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/meefjliobkgnafkfoogkbnfbpakakppp).
 
 ## Development
 
@@ -21,3 +24,7 @@
 
 -   This is only supported for vidplay videos, i have not looked into other video players.
 -   Auto enter fullscreen does not work since it requires user interaction. I tried to make it work, see commented code regarding fullscreen in `debug/debug.js`
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

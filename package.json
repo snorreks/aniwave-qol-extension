@@ -2,16 +2,33 @@
 	"name": "@snorreks/aniwave-qol-extension",
 	"type": "module",
 	"scripts": {
+		"clear": "cd input_bot && cargo clean",
+		"build": "cd input_bot && cargo build --release",
+		"package:linux": "cd input_bot && tar -czvf ../dist/input_bot_linux.tar.gz install.sh target/release/input_bot --transform 's,target/release/input_bot,input_bot,'",
+		"build-package": "pnpm build && pnpm package:linux",
 		"lint": "eslint --ext .js,.html src",
 		"write": "prettier --write src/**/*.{js,html}",
 		"fix": "pnpm lint --fix && pnpm write"
 	},
 	"devDependencies": {
+		"@types/chrome": "^0.0.248",
 		"eslint": "^8.52.0",
 		"eslint-config-google": "^0.14.0",
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-plugin-html": "^7.1.0",
 		"eslint-plugin-prettier": "^5.0.1",
 		"prettier": "^3.0.3"
-	}
+	},
+	"description": "AniWave Quality of Life extension for auto skipping intro and ending on AniWave videos.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/snorreks/aniwave-qol-extension"
+	},
+	"homepage": "https://chrome.google.com/webstore/detail/meefjliobkgnafkfoogkbnfbpakakppp",
+	"keywords": [
+		"aniwave",
+		"quality of life",
+		"extension"
+	],
+	"license": "MIT"
 }
